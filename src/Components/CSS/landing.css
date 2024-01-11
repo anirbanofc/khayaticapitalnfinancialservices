@@ -1,0 +1,41 @@
+.homeDiv {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+.left {
+  width: 20%;
+}
+.left > h1 {
+  font-size: 5em;
+}
+.left > p {
+  font-size: 2em;
+}
+.left > hr {
+  background-color: #3468c0;
+  margin-right: 100%;
+  margin-top: -2em;
+  height: 0.5em;
+  width: 30%;
+}
+.right {
+  width: 45%;
+}
+.right >img {
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 982px) {
+  .homeDiv {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .homeDiv hr{
+    margin-left: 35%;
+  }
+  .left {
+    width: 60%;
+  }
+}
