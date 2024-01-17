@@ -1,3 +1,134 @@
-.serviceCard{
-    border: .1em solid seagreen;
+.imgdiv {
+  border: 10px solid green;
+
+  width: 100%;
+  /* margin: auto; */
+  background-image: linear-gradient(#0b0b609a, /* #86a7fc74*/ #0b0b60),
+    url("https://img.freepik.com/free-photo/finance-business-elements-assortment-with-businessman_23-2148793763.jpg?w=1380&t=st=1705256252~exp=1705256852~hmac=66204b22bea6c685e50b3b7f44b180eebb1e24c737f890f25ac4de102469869f");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 0 10em;
+}
+.imgdiv > h1 {
+  /* margin-top: 40%; */
+  color: #c7c3bc;
+  font-size: 9em;
+}
+
+.outerServiceCard {
+  border: 1px solid green;
+  width: 90%;
+  margin: auto;
+}
+.serviceCard {
+  
+  text-align: center;
+  width: 80%;
+}
+
+.mainServiceCard > img {
+  width: 40%;
+  border-radius: 2em 0 0 2em;
+}
+.loandiv img{
+  height: 20em;
+}
+.loandiv{
+
+  text-align: center;
+  margin-top: 5em;
+  display: flex;
+  justify-content: space-around;
+}
+.indiVidualLoan{
+  width: 40%;
+  text-align: center;
+}
+
+.indiVidualLoan h1{
+  margin-top: 3em;
+}
+.outerServiceCard .details {
+  border-radius: 0em 2em 2em 0;
+  padding-top: 5em;
+  background-color: #0b0b60;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.mainServiceCard {
+  /* height: 50em; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.subServiceCard {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+}
+.subServiceCard h1{
+  font-size: 3em;
+}
+.outerServiceCard > h1 {
+  margin-top: 5em;
+
+  text-align: center;
+  font-size: 3em;
+}
+.outerServiceCard > h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 3em;
+}
+.serviceCard > p {
+  line-height: 2em;
+  font-size: 2.5em;
+}
+.indiVidualLoan p{
+width: 110%;
+  font-size: 1.8em;
+}
+
+.fund{
+  text-align: center;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+}
+.fund img{
+  height: 20em;
+}
+.singlefund{
+  border: 1px solid green;
+}
+@media (max-width: 982px) {
+  .mainServiceCard {
+    /* margin-left: -2em; */
+    width: 60%;
+    margin-left: -22em;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .outerServiceCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainServiceCard p {
+    font-size: 1.5em;
+  }
+  .subServiceCard > img {
+    height: 15em;
+  }
+  .outerServiceCard .details{
+    /* width: 160%; */
+    border-radius: 0 0 2em 2em;
+  }
+
+  .loandiv{
+    flex-direction: column;
+    align-items: center;
+  }
 }

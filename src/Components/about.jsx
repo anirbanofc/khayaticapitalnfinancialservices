@@ -1,34 +1,35 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
-import About from "./about";
-import Services from "./Services";
 import css from "./CSS/about.css"
-import { IoHomeOutline } from "react-icons/io5";
-import { FaCarRear } from "react-icons/fa6";
-import { LiaBusinessTimeSolid } from "react-icons/lia";
-
 import aboutCardData from "./Data/aboutCardData";
+import { useEffect } from "react";
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
-export default function about() {
+
+export default function About() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
-    <div className="aboutMainDiv">
+    <div className="aboutMainDiv" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
       <h1>Khayati Capital is a one stop solution for every business need. </h1>
-      <hr />
+      <hr/>
       <p>
-        The brochure must grab a viewer’s attention and hold it long enough to
-        deliver the pertinent information.
+      Better solutions for your financial needs.
       </p>
       <div className="cardDiv">
       {aboutCardData.map(({Icon,Heading,Details},key)=>{
         return (
-        <div div key={key} className="card">
+        <div div key={key} className="card" data-aos="zoom-in">
           <div className="icon">{Icon}</div>
           <div className="heading">{Heading}</div>
           <div className="details">{Details}</div>
         </div>)
       })}
       </div>
-      <div className="aboutDiv"></div>
+      <div className="country" data-aos="fade-down">
+        <h2>Project funding FOR INDIA  ALGERIA, ECUADOR,GABON, INDONESIA, IRAN, IRAQ, KUWAIT, LIBIYA, NIGERIA, Ghana , Kenya  Uganda, Rwanda Namibia, South Africa , Mauritius,  and others African  countries MALDIVES  SOUDI ARABIA, UK, USA , UAE,  INDIA , Thailand and all Asians countries  for valuable projects .</h2>
+      </div>
     </div>
   );
 }

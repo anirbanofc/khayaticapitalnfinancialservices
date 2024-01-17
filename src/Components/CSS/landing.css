@@ -2,15 +2,25 @@
   justify-content: space-around;
   display: flex;
   align-items: center;
+  background-image: linear-gradient(#0b0b609a, /* #86a7fc74*/ #0b0b60),
+    url("https://img.freepik.com/free-photo/businessman-giving-money-his-partner-while-making-contract_1150-37744.jpg?w=1060&t=st=1705152712~exp=1705153312~hmac=e3ca4587cf3ba624b920a66b7b529ac9ebebc1e2aae9ff357ffcec7bfc3f36f7");
+  background-size: 100% 100%;
+  height: 65em;
+}
+
+.landingDiv{
+  width: 100%;
 }
 .left {
   width: 20%;
 }
 .left > h1 {
+  color: azure;
   font-size: 5em;
 }
 .left > p {
   font-size: 2em;
+  color: wheat;
 }
 .left > hr {
   background-color: #3468c0;
@@ -22,9 +32,21 @@
 .right {
   width: 45%;
 }
-.right >img {
+.right > img {
   height: 100%;
   width: 100%;
+  /* background-color: transparent;
+  border: .1em solid salmon; */
+}
+hr{
+  border: none;
+}
+.landingbtn{
+  color: #ffffff;
+  padding: 1em 2em;
+  background-color: #0b0b6000;
+  border: 2px solid #ffffff;
+  border-radius: .5em;
 }
 @media (max-width: 982px) {
   .homeDiv {
@@ -32,7 +54,7 @@
     align-items: center;
     text-align: center;
   }
-  .homeDiv hr{
+  .homeDiv hr {
     margin-left: 35%;
   }
   .left {
