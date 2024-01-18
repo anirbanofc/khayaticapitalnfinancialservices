@@ -48,9 +48,9 @@ export default function Services() {
         
       </div>
       <div className="fund">
-          {fund.map(({type,desc,fundimg}, index) => {
+          {fund.map(({type,desc,fundimg,icon}, index) => {
             return (
-                <div id="key" className="singlefund">
+                <div id="key" className="singlefund" data-aos="fade-down-left">
                   <div className="img">
                     <img src={fundimg} alt="" />
                   </div>
@@ -58,8 +58,8 @@ export default function Services() {
                   <p>
                     {desc.map(({service}, innerindex) => {
                       return (
-                        <div key={innerindex}>
-                          <p>{service}</p>
+                        <div key={innerindex}className="innerservices">
+                          <p> <span>{icon} </span>{service}</p>
                         </div>
                       );
                     })}

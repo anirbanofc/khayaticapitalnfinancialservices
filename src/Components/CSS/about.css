@@ -6,6 +6,7 @@
     margin-top: 3em;
     width: 100%;
     text-align: center;
+
 }
 .aboutMainDiv>h1{
     margin-top: 2em;
@@ -62,6 +63,9 @@ transition: .4s;
 color: #29ADB2;
 }
 .country{
+    width: 70%;
+    margin: 10em auto;
+    border-radius: 2em;
     line-height: 5em;
     padding: 10em 20em;
     height: 20em;
@@ -84,7 +88,8 @@ color: #29ADB2;
         margin-top: 2em;
     }
     .country{
-        
+        padding: 5em 2em;
+        width: 80%;
         height: fit-content;
     }
 }

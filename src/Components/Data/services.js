@@ -31,12 +31,12 @@ let loan = [
     desc: "We also  authorised Trade Finance Specialist ' in  India of Euro Exim Bank for the following Unsecured Trade Finance products: Our USP is no interest nor margin money nor hard collateral requirement. Only one time issuance fees is payable after acceptance of draft by beneficiary and their bank.",
   },
 ];
-
 let fund = [
   {
     type: "FUND BASED",
+    icon:<FaArrowRight/>,
     desc: [
-      { service: "Off-Shore Banking Services-( Corporates & Individual" },
+      { service: `Off-Shore Banking Services-( Corporates & Individual` },
       { service: "Payment Gateway(Exim-wave)- for Merchant Account" },
       { service: "Escrow Services" },
       { service: "Virtual Visa/Master & Charge Cards" },
@@ -45,7 +45,10 @@ let fund = [
     ],
     fundimg: fundimg,
   },
-  { type: "NON FUND BASED", desc: [
+  { type: "NON FUND BASED",
+  
+  icon:<FaArrowRight/>,
+   desc: [
     { service: "Letter of Credit- MT 710- For Importers & Traders" },
     { service: "Bank Guarantee- MT 760" },
     { service: "Standby Letter of Credit- SBLC-(MT760/799)" },

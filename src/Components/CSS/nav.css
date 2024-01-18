@@ -5,6 +5,9 @@ nav {
   align-items: center;
   background-color: #0b0b60;
 }
+.hamburger {
+  display: none;
+}
 .logodiv {
   display: flex;
   align-items: center;
@@ -15,10 +18,12 @@ nav {
   height: 3em;
 }
 nav > ul {
+  background-color: #0b0b60;
   display: flex;
   gap: 3em;
 }
 .logo {
+  /* display: block; */
   text-decoration: none;
   color: white;
 }
@@ -28,7 +33,31 @@ nav > ul {
   font-size: 2em;
 }
 @media (max-width: 982px) {
+  /* nav{
+    margin-bottom: 20em;
+  } */
   .logodiv > h5 {
     display: none;
+  }
+  nav > ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    margin: 0;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  nav > ul .link {
+    
+    text-align: center;
+  }
+  .hamburger {
+    z-index: 101;
+    display: block;
+    color: white;
+    font-size: 3em;
   }
 }
